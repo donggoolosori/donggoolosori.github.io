@@ -26,16 +26,18 @@ package.json 파일을 보면 다음과 같이 설치된 것을 확인할 수 �
 
 ```json
 "scripts": {
-	// npm run server 를 입력하면 nodemone server가 실행
     "server":"nodemon server",
-	// npm run client 를 입력하면 client 폴더로 이동하여 npm start 실행
     "client":"npm start --prefix client",
-	// npm run dev를 입력하면 npm run server와 npm run client가 동시에 실행
     "dev":"concurrently \"npm run server\" \"npm run client\""
 }
 ```
+- **npm run server** 를 입력하면 **nodemone server**가 실행
+- **npm run client** 를 입력하면 **client 폴더로 이동**하여 **npm start** 실행
+- **npm run dev**를 입력하면 **npm run server**와 **npm run client**가 **동시**에 실행
+
   
 이제 실행해봅시다.
+
 ```bash
 $ npm run dev
 ```
