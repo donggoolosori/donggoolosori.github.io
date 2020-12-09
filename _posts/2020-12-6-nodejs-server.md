@@ -4,7 +4,7 @@ title: "Node.js Express 로 서버 구축하기"
 subtitle: "create http server"
 date: 2020-12-06 21:56:00
 author: "dongjune"
-header-img: "img/home-bg.jpg"
+header-img: "img/in_post/pixel_cafe.gif"
 catalog: true
 tags:
   - Backend

@@ -4,7 +4,7 @@ title: "[Node.js] address already in use 에러 해결하기"
 subtitle: "macOs, Linux 해결방법"
 date: 2020-12-09 18:26:00
 author: "dongjune"
-header-img: "img/home-bg.jpg"
+header-img: "img/in_post/pixel_cafe.gif"
 catalog: true
 tags:
   - Backend
