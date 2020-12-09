@@ -31,9 +31,9 @@ package.json 파일을 보면 다음과 같이 설치된 것을 확인할 수 �
     "dev":"concurrently \"npm run server\" \"npm run client\""
 }
 ```
-- **npm run server** 를 입력하면 **nodemone server**가 실행
-- **npm run client** 를 입력하면 **client 폴더로 이동**하여 **npm start** 실행
-- **npm run dev**를 입력하면 **npm run server**와 **npm run client**가 **동시**에 실행
+  line 2 : **npm run server** 를 입력하면 **nodemone server**가 실행  
+  line 3 : **npm run client** 를 입력하면 **client 폴더로 이동**하여 **npm start** 실행  
+  line 4 : **npm run dev**를 입력하면 **npm run server**와 **npm run client**가 **동시**에 실행  
 
   
 이제 실행해봅시다.
