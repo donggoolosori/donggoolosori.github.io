@@ -8,7 +8,6 @@ header-img: "img/home-bg.jpg"
 catalog: true
 tags:
   - iOS
-  - Swift
 ---
 setTitle 명령어를 통해 UIButton의 title을 바꿀 수 있습니다.
 ```swift

@@ -8,7 +8,6 @@ header-img: "img/home-bg.jpg"
 catalog: true
 tags:
   - iOS
-  - Swift
 ---
 [지난 포스팅](https://donggoolosori.github.io/2020/12/06/ios-contraint/)에서 Pinning Constraints에 대해 알아봤습니다.  
 하지만 Auto Layout을 위해서는 Pinning Constraint 만으로는 충분하지 않습니다. 

@@ -8,7 +8,6 @@ header-img: "img/in_post/code-bg.jpg"
 catalog: true
 tags:
   - Algorithm
-  - c++
 ---
 
 # 이분탐색

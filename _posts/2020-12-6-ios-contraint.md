@@ -8,7 +8,6 @@ header-img: "img/home-bg.jpg"
 catalog: true
 tags:
   - iOS
-  - Swift
 ---
 ### <span style="color:rgba(0,0,200,0.4)">Constraints가 필요한 이유</span> 
 아래의 초록색 Image View만 추가해 놓은 앱을 살펴봅시다.
