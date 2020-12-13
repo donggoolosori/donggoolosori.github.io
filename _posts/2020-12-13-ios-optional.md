@@ -62,7 +62,7 @@ Forced Unwrapping은 컴퓨터에게 이렇게 말하는 것과 같습니다.
 하지만 만약 프로그래머의 말과 달리 Optional 변수가 **nil** 값이라면 **에러**가 발생하게 되겠죠.  
 따라서 Forced Unwrapping 을 사용할 때는 반드시 Optional 변수에 값이 있다는 것이 **보장** 돼야 합니다. 하지만 모든 상황에서 Optional 변수가 nil 값이 아닌 것을 보장하는 것은 쉽지 않죠. Forced Unwrapping 이 아닌 **다른 방법**도 필요해 보입니다.  
   
-Optional 변수를 다루는 다른 방법들에는 Forced Unwrapping 말고도 4가지가 더 존재합니다.
+Optional 변수를 다루는 다른 방법들에는 4가지가 더 존재합니다.
 - Check for nil value
 - Optional Binding
 - Nil Coalescing Operator
