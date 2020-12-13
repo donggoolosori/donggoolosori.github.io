@@ -4,7 +4,7 @@ title: "[Swift] Optional - 2"
 subtitle: "Optional Binding, Chaining an the Nil Coalescing Operator"
 date: 2020-12-13 16:20:00
 author: "dongjune"
-header-img: "img/home-bg.jpg"
+header-img: "img/in_post/ios.jpg"
 catalog: true
 tags:
   - iOS
