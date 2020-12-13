@@ -7,7 +7,7 @@ author: "dongjune"
 header-img: "img/in_post/pixel_cafe.gif"
 catalog: true
 tags:
-  - Backend
+  - Node.js
 --- 
 
 npm run 명령어를 사용하여 nodejs를 실행하려 할때 다음과 같은 오류가 발생할 때가 있습니다.

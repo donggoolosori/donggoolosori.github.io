@@ -7,7 +7,8 @@ author: "dongjune"
 header-img: "img/in_post/pixel_cafe.gif"
 catalog: true
 tags:
-  - Backend
+  - Node.js
+  - React
 --- 
 
 우선 프로젝트의 루트 폴더에서 concurrently package를 설치해줍니다.

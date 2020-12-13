@@ -7,7 +7,7 @@ author: "dongjune"
 header-img: "img/in_post/pixel_cafe.gif"
 catalog: true
 tags:
-  - Backend
+  - Node.js
 ---
 ### <span style="color:rgba(0,0,200,0.6)">기본 Setting</span>
 우선 express 패키지를 설치해줍니다.
