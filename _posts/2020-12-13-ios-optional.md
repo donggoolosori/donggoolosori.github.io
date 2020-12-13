@@ -4,7 +4,7 @@ title: "[Swift] Optional - 1"
 subtitle: "?!"
 date: 2020-12-13 15:56:00
 author: "dongjune"
-header-img: "img/home-bg.jpg"
+header-img: "img/in_post/ios.jpg"
 catalog: true
 tags:
   - iOS

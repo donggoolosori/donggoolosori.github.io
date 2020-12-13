@@ -4,7 +4,7 @@ title: "[iOS] Alignment Constraints - Swift"
 subtitle: "Auto Layout and Responsive UIs"
 date: 2020-12-06 16:19:00
 author: "dongjune"
-header-img: "img/home-bg.jpg"
+header-img: "img/in_post/ios.jpg"
 catalog: true
 tags:
   - iOS

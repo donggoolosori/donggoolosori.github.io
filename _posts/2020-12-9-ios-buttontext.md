@@ -4,7 +4,7 @@ title: "[iOS] Change button title - Swift"
 subtitle: "setTitle"
 date: 2020-12-09 22:19:00
 author: "dongjune"
-header-img: "img/home-bg.jpg"
+header-img: "img/in_post/ios.jpg"
 catalog: true
 tags:
   - iOS
