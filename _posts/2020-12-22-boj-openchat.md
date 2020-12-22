@@ -1,0 +1,83 @@
+---
+layout: post
+title: "[2019 KAKAO BLIND RECRUITMENT] 오픈채팅방- C++"
+subtitle: "프로그래머스"
+date: 2020-12-22 22:10:00
+author: "dongjune"
+header-img: "img/in_post/4.jpg"
+catalog: true
+tags:
+  - Programmers
+---
+# 문제
+[프로그래머스 - 오픈채팅방](https://programmers.co.kr/learn/courses/30/lessons/42888)
+# 풀이
+우선 이름의 갱신을 편리하게 하기위해 unordered map을 사용하였습니다. map은 key 값이 중복되지 않는다는 특성이 있기 때문에 다음과 같이 간편하게 Id의 이름을 갱신할 수 있습니다.
+```c++
+unordered_map<string,string> um; // [key:value] = [id:name]
+
+// ....
+
+um[id] = newName; // id의 이름 갱신
+```
+  
+record 벡터를 반복문으로 순회하며 각 문자열마다 Action, Id, Name 을 추출해주고 위의 코드와 같이 Id에 대한 이름을 매번 갱신해줬습니다.  
+Action과 Id 정보는 temp vector에 계속 넣어줍니다.
+
+record의 순회가 끝나면 다음과 같이 temp vector를 순회하며 메시지를 answer 벡터에 넣어줍니다.
+```c++
+for(auto iter : temp){
+    string action = iter.first;
+    string id = iter.second;
+    if(action=="Enter")
+        answer.push_back(um[id]+"님이 들어왔습니다.");
+    else if(action=="Leave")
+        answer.push_back(um[id]+"님이 나갔습니다.");
+}
+```
+
+# 코드
+```c++
+#include <string>
+#include <vector>
+#include <unordered_map>
+
+using namespace std;
+
+vector<string> solution(vector<string> record) {
+    vector<string> answer;
+    unordered_map<string,string> um; // key=Id, value=name
+    vector<pair<string,string>> temp; // Action과 Id 정보를 저장하는 벡터
+
+    for(auto s:record){
+        int start=0;
+        vector<string> actionIdName;
+
+        // 문자열을 공백을 기준으로 Action, Id, Name으로 나누는 과정
+        for(int i=0;i<s.length();i++){
+            if(s[i]==' '){
+                actionIdName.push_back(s.substr(start,i-start));
+                start=i+1;
+            }
+        }
+        if(actionIdName[0]!="Leave")
+            um[actionIdName[1]] = s.substr(start);
+        else
+            actionIdName.push_back(s.substr(start));
+
+        temp.push_back({actionIdName[0],actionIdName[1]});
+    }
+
+    for(auto iter : temp){
+        string action = iter.first;
+        string id = iter.second;
+        if(action=="Enter")
+            answer.push_back(um[id]+"님이 들어왔습니다.");
+        else if(action=="Leave")
+            answer.push_back(um[id]+"님이 나갔습니다.");
+    }
+
+
+    return answer;
+}
+```
