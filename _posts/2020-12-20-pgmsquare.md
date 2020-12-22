@@ -4,7 +4,7 @@ title: "[프로그래머스] 가장 큰 정사각형 찾기- C++"
 subtitle: "level 2"
 date: 2020-12-20 18:10:00
 author: "dongjune"
-header-img: "img/in_post/Posts.jpg"
+header-img: "img/in_post/1.jpg"
 catalog: true
 tags:
   - Programmers

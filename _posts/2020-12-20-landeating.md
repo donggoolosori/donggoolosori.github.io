@@ -4,7 +4,7 @@ title: "[프로그래머스] 땅따먹기- C++"
 subtitle: "level 2, DP"
 date: 2020-12-20 19:35:00
 author: "dongjune"
-header-img: "img/in_post/Posts.jpg"
+header-img: "img/in_post/6.jpg"
 catalog: true
 tags:
   - Programmers
