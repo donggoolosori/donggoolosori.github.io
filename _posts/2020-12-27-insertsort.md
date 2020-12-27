@@ -7,7 +7,7 @@ author: "dongjune"
 header-img: "img/in_post/1.jpg"
 catalog: true
 tags:
-  - Programmers
+  - Algorithm
 ---
 
 # 삽입정렬

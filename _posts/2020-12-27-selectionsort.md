@@ -7,7 +7,7 @@ author: "dongjune"
 header-img: "img/in_post/7.jpg"
 catalog: true
 tags:
-  - Programmers
+  - Algorithm
 ---
 # 선택정렬이란?
 선택정렬은 제자리 정렬 알고리즘의 하나입니다.
