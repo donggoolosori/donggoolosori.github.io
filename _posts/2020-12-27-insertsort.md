@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Algorithm] Insertion Sort (삽입 정렬) - C++"
-subtitle: ""
+subtitle: "Sort"
 date: 2020-12-27 20:10:00
 author: "dongjune"
 header-img: "img/in_post/1.jpg"
