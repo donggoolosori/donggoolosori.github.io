@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[2019 KAKAO BLIND RECRUITMENT] 뉴스 클러스터링 - C++"
+title: "[프로그래머스] 프린터 - C++"
 subtitle: "level2"
-date: 2020-12-26 20:10:00
+date: 2020-1-1 18:40:00
 author: "dongjune"
 header-img: "https://images.unsplash.com/photo-1609433635932-6571b56f4fd4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
 catalog: true
