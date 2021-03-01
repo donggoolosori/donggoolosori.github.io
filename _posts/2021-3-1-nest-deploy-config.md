@@ -27,5 +27,3 @@ $ heroku config:set JWT_SECRET="mysecret"
 ```
 
 그 후 배포를 해보니 정상적으로 배포가 완료됐다.  
-아래는 정상적으로 배포가 된 사이트이다.  
-https://donggoolosori.github.io/devconnect
