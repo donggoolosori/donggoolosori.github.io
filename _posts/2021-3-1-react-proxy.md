@@ -4,9 +4,10 @@ title: "[React] React 에서 proxy 설정이 먹히지 않을 때"
 subtitle: "React proxy error"
 date: 2021-3-1 21:53:00
 author: "dongjune"
-header-img: "img/in_post/3.jpg"
+header-img: "img/in_post/5.jpg"
 catalog: true
-tags: - React
+tags:
+  - NestJs
   - TypeScript
 ---
 

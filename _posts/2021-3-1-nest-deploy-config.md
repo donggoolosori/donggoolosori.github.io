@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[NestJs] Heroku로 NestJs 배포 시 config 값 설정"
-subtitle: ""
+subtitle: "NestJs heroku deploy"
 date: 2021-3-1 22:00:00
 author: "dongjune"
 header-img: "img/in_post/4.jpg"
