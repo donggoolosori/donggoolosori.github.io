@@ -28,15 +28,19 @@ serverless를 통해 나의 AWS 계정에 Lambda 함수를 배포하기 위해�
 그러기 위해서 우선 AWS의 액세스 권한을 안전하게 제어할 수 있는 IAM을 생성해줍니다.  
   
 [IAM](https://console.aws.amazon.com/iam/home) 링크에 들어가서 사용자 -> 사용자 추가를 선택합니다.
-1. 사용자 이름을 설정하고 프로그래밍 방식 엑세스를 선택합니다.
+### 1. 사용자 이름을 설정하고 프로그래밍 방식 엑세스를 선택합니다.
 <img width="1028" alt="스크린샷 2021-04-01 오후 2 09 59" src="https://user-images.githubusercontent.com/53213397/113246657-6f2fa100-92f4-11eb-873a-d2729085727a.png">
-2. 기존 정책 직접 연결을 선택 후 AdministratorAccess를 선택합니다.
+
+### 2. 기존 정책 직접 연결을 선택 후 AdministratorAccess를 선택합니다.
 <img width="1033" alt="스크린샷 2021-04-01 오후 2 11 56" src="https://user-images.githubusercontent.com/53213397/113246673-79519f80-92f4-11eb-9771-8e1a5e8a6217.png">
-3. 태그는 추가는 그냥 넘어가줍니다.
+
+### 3. 태그는 추가는 그냥 넘어가줍니다.
 <img width="1004" alt="스크린샷 2021-04-01 오후 2 12 08" src="https://user-images.githubusercontent.com/53213397/113246686-7c4c9000-92f4-11eb-91f1-abeb14d6bc6f.png">
-4. 4번도 그냥 넘어갑니다.
+
+### 4. 4번도 그냥 넘어갑니다.
 <img width="991" alt="스크린샷 2021-04-01 오후 2 12 18" src="https://user-images.githubusercontent.com/53213397/113246693-81a9da80-92f4-11eb-9ebb-bd6e7c93ded4.png">
- 5. 이제 다음과 같이 엑세스 키 ID와 비밀 엑세스 키를 얻을 수 있습니다. 이 ID와 비밀 키를 잘 저장해둡니다.
+
+### 5. 이제 다음과 같이 엑세스 키 ID와 비밀 엑세스 키를 얻을 수 있습니다. 이 ID와 비밀 키를 잘 저장해둡니다.
 <img width="1021" alt="스크린샷 2021-04-01 오후 2 12 44" src="https://user-images.githubusercontent.com/53213397/113246703-85d5f800-92f4-11eb-8414-2c2d2a56a530.png">
 
 # serverless 권한 설정
