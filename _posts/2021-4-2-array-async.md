@@ -11,7 +11,7 @@ tags:
 ---
 
 # <span style="color:rgba(0,0,200,0.7)">Issue</span>
-최근에 [daily commit bot]([https://github.com/donggoolosori/daily-commit-bot](https://github.com/donggoolosori/daily-commit-bot))이라는 커밋 알람 텔래그램 봇을 개발하면서, 배열에 ```비동기 작업```을 수행해야 하는 경우가 생겼다.
+최근에 [daily commit bot](https://github.com/donggoolosori/daily-commit-bot)이라는 커밋 알람 텔래그램 봇을 개발하면서, 배열에 ```비동기 작업```을 수행해야 하는 경우가 생겼다.
 
 내가 바랬던 것은 user의 정보가 담긴 배열을 DB에서 불러온 후, 그 user 배열의 모든 user 마다 오늘의 commit을 확인하여 commit 메시지를 보내는 것이었다.  
 처음에는 아무생각 없이 아래처럼 ```forEach``` 메소드를 사용했다.
