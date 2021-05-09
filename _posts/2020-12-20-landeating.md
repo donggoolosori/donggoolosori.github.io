@@ -12,7 +12,8 @@ tags:
 # 문제
 [땅따먹기](https://programmers.co.kr/learn/courses/30/lessons/12913)
 # 풀이
-DP를 사용하여 풀이했습니다. 다음은 DP를 구현한 재귀함수입니다.
+DP를 사용하여 풀이했습니다.  
+다음은 ```bottom up``` 방식의 재귀함수입니다.
 ```c++
 int findMax(int y,int x,vector<vector<int>> &land){
     // 기저사례
@@ -30,9 +31,28 @@ int findMax(int y,int x,vector<vector<int>> &land){
     return cache[y][x] = land[y][x] + tempMax;
 }
 ```
-cache 배열에 계산 된 값을 저장해서 중복되는 재귀함수의 호출을 막아줍니다.  
+다음은 ```top down``` 방식의 재귀함수입니다.
+```c++
+int findMaxScore(int y, int x, const vector<vector<int>> &land)
+{
+    if (y == 0)
+        return land[y][x];
+    int &ret = cache[y][x];
+    if (ret != 0)
+        return ret;
+    int temp = 0;
+    for (int i = 0; i < 4; i++)
+    {
+        if (i == x)
+            continue;
+        temp = max(temp, findMaxScore(y - 1, i, land));
+    }
+    return ret = land[y][x] + temp;
+}
+```
 
 # 소스 코드
+### bottom up
 ```c++
 #include <iostream>
 #include <vector>
@@ -68,6 +88,44 @@ int solution(vector<vector<int> > land)
     int answer=0;
     for(int i=0;i<4;i++)
         answer = max(answer,findMax(0,i,land));
+    return answer;
+}
+```
+### top down
+```c++
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int cache[100000][4];
+
+int findMaxScore(int y, int x, const vector<vector<int>> &land)
+{
+    if (y == 0)
+        return land[y][x];
+    int &ret = cache[y][x];
+    if (ret != 0)
+        return ret;
+    int temp = 0;
+    for (int i = 0; i < 4; i++)
+    {
+        if (i == x)
+            continue;
+        temp = max(temp, findMaxScore(y - 1, i, land));
+    }
+    return ret = land[y][x] + temp;
+}
+
+int solution(vector<vector<int>> land)
+{
+    int answer = 0;
+    int n = land.size();
+
+    for (int i = 0; i < 4; i++)
+        answer = max(answer, findMaxScore(n - 1, i, land));
+
     return answer;
 }
 ```
