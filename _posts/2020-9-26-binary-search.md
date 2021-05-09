@@ -19,11 +19,14 @@ tags:
 이제 본격적으로 이분탐색 알고리즘을 알아보자. 아래와 같이 1~500까지의 데이터에서 62를 찾아보자(데이터셋은 반드시 **정렬** 돼있어야 한다는 것을 주의하자).
 
 1. 우선 **left**는 가장 왼쪽인 1, **right**는 가장 오른쪽인 500이고 mid는 (1+500)/2인 250이다 (소수점은 버린다).  
-   ![1단계](/assets/img/binary1.png)
+   ![binary1](https://user-images.githubusercontent.com/53213397/117575662-be4fc980-b11d-11eb-8a0d-3248dfc3d806.png)
+
 2. 찾고자 하는 값은 62로 mid 값 250보다 작기 때문에 250 이후의 데이터들은 버린다. 즉 left=1, right = 249, mid = (1+249)/2=125로 갱신 된다.  
-   ![2단계](/assets/img/binary2.png)
+   ![binary2](https://user-images.githubusercontent.com/53213397/117575666-c3147d80-b11d-11eb-8f3a-9e1895b03ae4.png)
+
 3. 여전히 타겟 값 62는 125보다 작으므로 2번 과정과 마찬가지로 오른쪽 데이터들을 버려준다. 즉 left=1, right=124, mid = (1+124)/2 = 62로 갱신 된다.  
-    ![3단계](/assets/img/binary3.png)  
+    ![binary3](https://user-images.githubusercontent.com/53213397/117575668-c445aa80-b11d-11eb-9989-53f58d991e04.png)
+  
     mid 값이 타겟 값 62와 일치하므로 탐색이 완료 됐다.
    일반적인 탐색이었으면 1부터 순차적으로 탐색하며 62번 째에 탐색이 완료 됐겠지만 이분탐색으로 **단 3번만에** 탐색을 완료했다. 이제 실제 c++ 코드로 이분탐색을 구현해보자.
 
