@@ -10,7 +10,7 @@ tags:
   - Algorithm
 ---
 # 병합정렬
-병합정렬은 이전에 포스팅한 [퀵정렬](https://donggoolosori.github.io/2021/01/05/quicksort/)과 마찬가지로 분할정복 패러다임을 기반으로 한 정렬 알고리즘입니다.  
+병합정렬은 이전에 포스팅한 [퀵정렬](https://donggoolosori.github.io/2021/01/05/quicksort/){:target="_blank"}과 마찬가지로 분할정복 패러다임을 기반으로 한 정렬 알고리즘입니다.  
 다음은 병합정렬의 매커니즘을 보여주는 그림입니다.
 <img width="1032" alt="스크린샷 2021-01-21 오후 9 06 38" src="https://user-images.githubusercontent.com/53213397/105351051-5c7f5880-5c2f-11eb-8824-f39dd7e06034.png">
 위의 그림을 보면 병합정렬은 분해가 다 이루어진 후 병합을 하면서 정렬이 이루어집니다. 

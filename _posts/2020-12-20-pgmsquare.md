@@ -10,7 +10,7 @@ tags:
   - Programmers
 ---
 # 문제
-[가장 큰 정사각형 찾기](https://programmers.co.kr/learn/courses/30/lessons/12905)
+[가장 큰 정사각형 찾기](https://programmers.co.kr/learn/courses/30/lessons/12905){:target="_blank"}
 # 풀이
 다음과 같은 입력이 있습니다. 한눈에 봐도 가장 큰 사각형의 크기는 3x3 = 9 입니다.  
 9라는 답을 어떻게 도출할 수 있을까요?

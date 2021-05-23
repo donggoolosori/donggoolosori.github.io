@@ -10,7 +10,7 @@ tags:
   - Programmers
 ---
 # 문제
-[땅따먹기](https://programmers.co.kr/learn/courses/30/lessons/12913)
+[땅따먹기](https://programmers.co.kr/learn/courses/30/lessons/12913){:target="_blank"}
 # 풀이
 DP를 사용하여 풀이했습니다.  
 다음은 ```bottom up``` 방식의 재귀함수입니다.

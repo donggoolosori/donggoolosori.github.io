@@ -27,7 +27,7 @@ $ npm i -g serverless
 serverless를 통해 나의 AWS 계정에 Lambda 함수를 배포하기 위해서는 serverless가 나의 AWS 계정에 대한 권한을 갖고있어야 합니다.  
 그러기 위해서 우선 AWS의 액세스 권한을 안전하게 제어할 수 있는 IAM을 생성해줍니다.  
   
-[IAM](https://console.aws.amazon.com/iam/home) 링크에 들어가서 사용자 -> 사용자 추가를 선택합니다.
+[IAM](https://console.aws.amazon.com/iam/home){:target="_blank"} 링크에 들어가서 사용자 -> 사용자 추가를 선택합니다.
 ### 1. 사용자 이름을 설정하고 프로그래밍 방식 엑세스를 선택합니다.
 <img width="1028" alt="스크린샷 2021-04-01 오후 2 09 59" src="https://user-images.githubusercontent.com/53213397/113246657-6f2fa100-92f4-11eb-873a-d2729085727a.png">
 

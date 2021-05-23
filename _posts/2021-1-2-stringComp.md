@@ -10,7 +10,7 @@ tags:
   - Programmers
 ---
 # 문제
-[프로그래머스 문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057#)
+[프로그래머스 문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057#){:target="_blank"}
 # 풀이
 다양한 단위 길이로 문자열을 압축했을 때 압축 된 문자열의 가장 최소 길이를 찾는 문제입니다. 
 

@@ -9,7 +9,7 @@ catalog: true
 tags:
   - iOS
 ---
-[지난 포스팅](https://donggoolosori.github.io/2020/12/06/ios-contraint/)에서 Pinning Constraints에 대해 알아봤습니다.  
+[지난 포스팅](https://donggoolosori.github.io/2020/12/06/ios-contraint/){:target="_blank"}에서 Pinning Constraints에 대해 알아봤습니다.  
 하지만 Auto Layout을 위해서는 Pinning Constraint 만으로는 충분하지 않습니다. 
 ### <span style="color:rgba(0,0,200,0.4)">Pinning Constraint의 문제점</span>
 버튼을 화면 중앙에 위치시키는 것을 생각해봅시다.만약 Pinning으로 이것을 설정한다면 어떻게 될까요?  

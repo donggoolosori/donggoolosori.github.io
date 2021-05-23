@@ -63,7 +63,7 @@ app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 <img width="702" alt="스크린샷 2020-12-06 오후 10 18 24" src="https://user-images.githubusercontent.com/53213397/101281168-fd958980-3810-11eb-8baa-576b620ae762.png">  
 
 이제 **Postman** 으로 서버에 get 요청을 보내 "API Running" 이라는 응답을 받아봅시다. Postman은 개발한 API를 테스트할 수 있는 유용한 툴입니다.  
-[Postman 다운로드 링크](https://www.postman.com/)
+[Postman 다운로드 링크](https://www.postman.com/){:target="_blank"}
 
 다음과 같이 localhost 5000 서버에 get 요청을 보내니 서버가 API Running을 응답 하는 것을 확인할 수 있습니다.
 <img width="943" alt="스크린샷 2020-12-06 오후 10 08 12" src="https://user-images.githubusercontent.com/53213397/101280965-b1961500-380f-11eb-8084-8f4e0baa5baf.png">

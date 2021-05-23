@@ -10,7 +10,7 @@ tags:
   - Programmers
 ---
 # 문제
-[프로그래머스 카카오프렌즈 컬러링북](https://programmers.co.kr/learn/courses/30/lessons/1829)
+[프로그래머스 카카오프렌즈 컬러링북](https://programmers.co.kr/learn/courses/30/lessons/1829){:target="_blank"}
 # 풀이
 DFS를 활용하여 영역의 개수를 세줬습니다. 다음은 dfs를 구현한 재귀함수입니다.
 ```c++

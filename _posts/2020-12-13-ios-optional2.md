@@ -10,7 +10,7 @@ tags:
   - iOS
   - Swift
 ---
-[지난 포스팅](https://donggoolosori.github.io/2020/12/13/ios-optional/)에서 Optional의 개념과 Forced Unwrapping( ! ) 대해서 알아보았습니다. 하지만 Forced Unwrapping 을 사용하려면 Optional 변수 값이 반드시 존재해야 돼서 이것만으로는 nil 값을 다루기에는 한계가 있었습니다.  
+[지난 포스팅](https://donggoolosori.github.io/2020/12/13/ios-optional/){:target="_blank"}에서 Optional의 개념과 Forced Unwrapping( ! ) 대해서 알아보았습니다. 하지만 Forced Unwrapping 을 사용하려면 Optional 변수 값이 반드시 존재해야 돼서 이것만으로는 nil 값을 다루기에는 한계가 있었습니다.  
 
 이번 포스팅에서는 이러한 문제점을 해결해주는 4가지 방법에 대해서 자세히 알아보겠습니다.
 

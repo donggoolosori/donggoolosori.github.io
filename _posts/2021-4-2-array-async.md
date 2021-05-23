@@ -11,7 +11,7 @@ tags:
 ---
 
 # <span style="color:rgba(0,0,200,0.7)">Issue</span>
-최근에 [daily commit bot](https://github.com/donggoolosori/daily-commit-bot)이라는 커밋 알람 텔래그램 봇을 개발하면서, 배열에 ```비동기 작업```을 수행해야 하는 경우가 생겼다.
+최근에 [daily commit bot](https://github.com/donggoolosori/daily-commit-bot){:target="_blank"}이라는 커밋 알람 텔래그램 봇을 개발하면서, 배열에 ```비동기 작업```을 수행해야 하는 경우가 생겼다.
 
 내가 바랬던 것은 user의 정보가 담긴 배열을 DB에서 불러온 후, 그 user 배열의 모든 user 마다 오늘의 commit을 확인하여 commit 메시지를 보내는 것이었다.  
 처음에는 아무생각 없이 아래처럼 ```forEach``` 메소드를 사용했다.
@@ -36,7 +36,7 @@ users.forEach(async (user)=>{
 # <span style="color:rgba(0,0,200,0.7)">Solution</span>
 위의 코드가 정상적으로 작동하지 않는 이유를 알기 위해서는 먼저 forEach의 동작원리를 이해할 필요가 있다.
 ### forEach 동작원리 이해하기
-아래의 코드는 [MDN](https://developer.mozilla.org/ko/docs/Web/API/NodeList/forEach)에서 forEach를 구현한 코드이다.
+아래의 코드는 [MDN](https://developer.mozilla.org/ko/docs/Web/API/NodeList/forEach){:target="_blank"}에서 forEach를 구현한 코드이다.
 ```javascript
 if (window.NodeList && !NodeList.prototype.forEach) {
     NodeList.prototype.forEach = function (callback, thisArg) {
