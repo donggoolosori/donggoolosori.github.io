@@ -14,7 +14,8 @@ tags:
 Faster R-CNN은 **RPN(Region Proposal Network)** + **Fast R-CNN**이 합쳐진 네트워크이다.  
 ![1](https://user-images.githubusercontent.com/53213397/117608083-4f638680-b198-11eb-97ea-1cb17189a8e5.png)
 
-Region Proposal 영역을 딥러닝 네트워크에 포함시켜서 Fast R-CNN의 문제점을 개선했다. [(Fast R-CNN 포스팅)](https://donggoolosori.github.io/2020/10/21/fast-rcnn/)  
+Region Proposal 영역을 딥러닝 네트워크에 포함시켜서 Fast R-CNN의 문제점을 개선했다. [(Fast R-CNN 포스팅)](https://donggoolosori.github.io/2020/10/21/fast-rcnn/){:target="_blank"}  
+  
 따라서 Region Proposal에 GPU를 사용할 수 있고, 전체적으로 End-to-End 구조가 완성된다. 
 # Faster R-CNN 구조
 ![2](https://user-images.githubusercontent.com/53213397/117608122-6609dd80-b198-11eb-96fb-d39b9233e634.png)
