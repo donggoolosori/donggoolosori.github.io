@@ -100,7 +100,7 @@ void merge_sort(int left, int right) {
 }
 // 모든 원소 출력
 void print() {
-  for (const int &n : temp) cout << n << ' ';
+  for (const int &n : arr) cout << n << ' ';
 }
 
 int main() {
