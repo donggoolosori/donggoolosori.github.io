@@ -43,10 +43,10 @@ void quick_sort(int start, int end) {
       swap(arr[pivot], arr[high]);
     else  // 엇갈리지 않았으면 low high 교체
       swap(arr[low], arr[high]);
-    // 재귀 호출
-    quick_sort(start, high - 1);
-    quick_sort(high + 1, end);
   }
+  // 재귀 호출
+  quick_sort(start, high - 1);
+  quick_sort(high + 1, end);
 }
 
 // 모든 원소 출력
