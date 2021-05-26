@@ -22,17 +22,18 @@ tags:
 두 부분배열이 병합할 때 작은 값부터 차례대로 임시배열에 채워지게 되고, 원본배열의 값을 임시배열 값으로 교체해줍니다.  
 아래의 코드는 병합을 수행해주는 함수입니다.
 ```c++
-void merge(int left, int right) {
-  int mid = (left + right) / 2;
-  // lIdx: 왼쪽 부분배열의 인덱스, rIdx: 오른쪽 부분배열의 인덱스, k: 현재까지 임시배열에 채워진 인덱스
-  int lIdx = left, rIdx = mid + 1, k = left;
+void merge(int start, int end) {
+  int mid = (start + end) / 2;
+  // lIdx: 왼쪽 부분배열의 인덱스, rIdx: 오른쪽 부분배열의 인덱스, k: 현재까지
+  // 병합 한 인덱스
+  int lIdx = start, rIdx = mid + 1, k = start;
 
-  while (k <= right) {
+  while (k <= end) {
     if (lIdx > mid) {
       temp[k++] = arr[rIdx++];
       continue;
     }
-    if (rIdx > right) {
+    if (rIdx > end) {
       temp[k++] = arr[lIdx++];
       continue;
     }
@@ -41,7 +42,7 @@ void merge(int left, int right) {
     else
       temp[k++] = arr[rIdx++];
   }
-  for (int i = left; i <= right; i++) arr[i] = temp[i];
+  for (int i = start; i <= end; i++) arr[i] = temp[i];
 }
 ```
 ```k```가 left부터 시작하여 right 인덱스에 도달할때까지 while문을 수행합니다.  
@@ -66,18 +67,17 @@ using namespace std;
 vector<int> temp(7);
 vector<int> arr = {38, 27, 43, 9, 3, 82, 10};
 
-void merge(int left, int right) {
-  int mid = (left + right) / 2;
-  // lIdx: 왼쪽 부분배열의 인덱스, rIdx: 오른쪽 부분배열의 인덱스, k: 현재까지
-  // 병합 한 인덱스
-  int lIdx = left, rIdx = mid + 1, k = left;
+void merge(int start, int end) {
+  int mid = (start + end) / 2;
+  // lIdx: 왼쪽 부분배열의 인덱스, rIdx: 오른쪽 부분배열의 인덱스, k: 현재까지 병합 한 인덱스
+  int lIdx = start, rIdx = mid + 1, k = start;
 
-  while (k <= right) {
+  while (k <= end) {
     if (lIdx > mid) {
       temp[k++] = arr[rIdx++];
       continue;
     }
-    if (rIdx > right) {
+    if (rIdx > end) {
       temp[k++] = arr[lIdx++];
       continue;
     }
@@ -86,17 +86,16 @@ void merge(int left, int right) {
     else
       temp[k++] = arr[rIdx++];
   }
-  for (int i = left; i <= right; i++) arr[i] = temp[i];
+  for (int i = start; i <= end; i++) arr[i] = temp[i];
 }
 
-// 더 이상 분할 되지 않을 때까지 분할한 후
-// merge 함수를 호출하여 병합한다.
-void merge_sort(int left, int right) {
-  if (left >= right) return;
-  int mid = (left + right) / 2;
-  merge_sort(left, mid);
-  merge_sort(mid + 1, right);
-  merge(left, right);
+// 더 이상 분할 되지 않을 때까지 분할한 후 merge 함수를 호출하여 병합한다.
+void merge_sort(int start, int end) {
+  if (start >= end) return;
+  int mid = (start + end) / 2;
+  merge_sort(start, mid);
+  merge_sort(mid + 1, end);
+  merge(start, end);
 }
 // 모든 원소 출력
 void print() {
