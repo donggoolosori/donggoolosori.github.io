@@ -93,6 +93,11 @@ const promises = users.map(async (user) => {
 });
 await Promise.all(promises);
 ```
-1. ```map```을 사용하여 함수를 병렬적으로 수행한 promise들을 promises 배열에 담기
+1. ```map```을 사용하여 return된 promise들(```pending상태```)을 promises 배열에 담기
 2. Promise.all 이 pending 상태인 promises들이 모두 resolve 될 때까지 기다림
 3. Promise.all 이 resolve 되면 수행완료
+
+위의 코드에서 ```map``` 메소드를 사용하는 이유는 새로운 배열에 pending 상태인 promises들을 저장해주기 위함이다.
+map은 forEach 메소드와 마찬가지로 내부에 await가 존재하지 않고 단순히 callback을 실행시키며 다음 요소로 넘어간다.  
+따라서 resolve된 promise가 아니라 pending 상태의 promise들이 새로운 배열에 담기게 된다.  
+이제 ```Promise.all(promises)``` 를 사용하면 모든 Promise객체들이 resolve 되는 것을 병렬적으로 처리하게 된다.
