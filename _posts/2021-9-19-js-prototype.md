@@ -325,3 +325,7 @@ console.log(bar.constructor); // ② Object()
 
 - 객체의 프로퍼티를 참조하는데 해당 객체에 프로퍼티가 존재하지 않는 경우 프로토타입 체인이 동작한다.
 - 객체의 프로퍼티에 값을 할당할 때는 프로토타입 체인이 동작하지 않는다. 프로퍼티가 존재하지 않으면 프로퍼티를 동적으로 추가하기 때문이다.
+
+# Reference
+- https://poiemaweb.com/js-prototype
+- https://developer.mozilla.org/ko/docs/Learn/JavaScript/Objects/Object_prototypes
