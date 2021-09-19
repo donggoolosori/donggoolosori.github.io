@@ -148,11 +148,11 @@ console.log(Person.constructor === Function);
     const person = new Object();
     ```
 
-### 객체 리터럴 방식은 결국 `Object()` 생성자 함수를 사용하여 객체를 생성한다.
+- 객체 리터럴 방식은 결국 `Object()` 생성자 함수를 사용하여 객체를 생성한다.
 
-### `Object()` 생성자 함수는 함수이기 때문에 `prototype` 프로퍼티가 존재한다.
+- `Object()` 생성자 함수는 함수이기 때문에 `prototype` 프로퍼티가 존재한다.
 
-### 객체 리터럴로 생성된 객체의 프로토타입 객체는 `Object.prototype`이다.
+- 객체 리터럴로 생성된 객체의 프로토타입 객체는 `Object.prototype`이다.
 
 <img width="867" alt="스크린샷_2021-09-19_오전_10 46 29" src="https://user-images.githubusercontent.com/53213397/133931268-2575b2c3-09b5-4275-a772-e235516980c6.png">
 
