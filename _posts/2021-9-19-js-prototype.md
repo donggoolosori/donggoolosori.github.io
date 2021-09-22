@@ -7,7 +7,7 @@ author: "dongjune"
 header-img: "img/in_post/2.jpg"
 catalog: true
 tags:
-  - Javascript
+  - JavaScript
 ---
 # 🧀 프로토타입 객체
 
