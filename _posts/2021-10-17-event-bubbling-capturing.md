@@ -97,3 +97,5 @@ redBox.addEventListener('click',(e)=>{
 캡쳐링이 먼저 일어나기 때문에 캡쳐링 이벤트 핸들러가 먼저 실행되는 것을 확인할 수 있습니다.
 
 다음 포스팅에서는 이벤트의 전파를 막는 stopPropagtion과 stopImmediatePropagation 메소드에 대해서 알아보도록 하겠습니다.
+
+{% include codepen.html hash="QWvyPqB" title="hello" %}
