@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "[React] 컴포넌트 리스트와 key 속성"
-subtitle: "event, bubbling, capturing"
+subtitle: "React, key"
 date: 2021-11-6 22:10:00
 author: "dongjune"
-header-img: "img/in_post/1.jpg"
+header-img: "img/in_post/2.jpg"
 catalog: true
 tags:
   - React
