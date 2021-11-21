@@ -36,7 +36,7 @@ setInterval(()=>{
 > 보통 애니메이션을 그리는 함수는 3~4ms 안에 수행되는 것을 권장합니다. 그 이상이 넘어간다면 하나의 requestAnimationFrame 안에서 동작하게 하지 말고 여러개로 나누어 실행시켜야 합니다.
   
 # 🔥 requestAnimationFrame 사용하기
-{% include codepen.html username="donggoolosori" hash="XWaQXMJ" title="hello" %}
+<!-- {% include codepen.html username="donggoolosori" hash="XWaQXMJ" title="hello" %} -->
 
 
 
