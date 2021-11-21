@@ -36,7 +36,12 @@ setInterval(()=>{
 > 보통 애니메이션을 그리는 함수는 3~4ms 안에 수행되는 것을 권장합니다. 그 이상이 넘어간다면 하나의 requestAnimationFrame 안에서 동작하게 하지 말고 여러개로 나누어 실행시켜야 합니다.
   
 # 🔥 requestAnimationFrame 사용하기
-<!-- {% include codepen.html username="donggoolosori" hash="XWaQXMJ" title="hello" %} -->
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="XWaQXMJ" data-user="donggoolosori" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/donggoolosori/pen/XWaQXMJ">
+  Untitled</a> by Dongjune Kim (<a href="https://codepen.io/donggoolosori">@donggoolosori</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 
 
