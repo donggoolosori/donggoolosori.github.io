@@ -59,8 +59,8 @@ void quickSort(int *data, int start, int end) {
 }
 
 int main() {
-  int data[5] = {5, 4, 3, 2, 1};
-  int len = 5;
+  int data[7] = {38,27,43,9,3,82,10};
+  int len = 7;
   quickSort(data, 0, len - 1);
 
   for (int i = 0; i < len; i++) cout << data[i] << ' ';
