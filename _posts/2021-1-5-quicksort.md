@@ -26,39 +26,44 @@ tags:
 ```c++
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
-vector<int> arr = {38, 27, 43, 9, 3, 82, 10};
-
-void quick_sort(int start, int end) {
+void quickSort(int *data, int start, int end) {
   if (start >= end) return;
-  int pivot = start;  // 맨 처음 수를 pivot으로 설정
-  int low = start + 1, high = end;
+  int pivot = start;  // 기준 값
+  int i = start + 1;
+  int j = end;
 
-  while (low <= high) {
-    while (arr[low] <= arr[pivot] && low <= end) low++;
-    while (arr[high] >= arr[pivot] && high > start) high--;
-
-    if (low > high)  // 엇갈린 상태면 pivot과 high 교체
-      swap(arr[pivot], arr[high]);
-    else  // 엇갈리지 않았으면 low high 교체
-      swap(arr[low], arr[high]);
+  while (i <= j) {
+    while (data[i] <=
+           data[pivot])  // 키 값보다 큰 값 만날때까지 오른쪽으로 이동
+      i++;
+    while (data[j] >= data[pivot] &&
+           j > start)  // 키 값보다 작은 값 만날 때까지 왼쪽으로 이동
+      j--;
+    if (i > j)  //현재 엇갈린 상태면 pivot 값 교체
+    {
+      int temp = data[j];
+      data[j] = data[pivot];
+      data[pivot] = temp;
+    } else {
+      int temp = data[j];
+      data[j] = data[i];
+      data[i] = temp;
+    }
+    // 재귀 호출
+    quickSort(data, start, j - 1);
+    quickSort(data, j + 1, end);
   }
-  // 재귀 호출
-  quick_sort(start, high - 1);
-  quick_sort(high + 1, end);
-}
-
-// 모든 원소 출력
-void print() {
-  for (const int &n : arr) cout << n << ' ';
 }
 
 int main() {
-  // 퀵정렬 수행
-  quick_sort(0, 6);
-  // 결과 출력 : 3 9 10 27 38 43 82
-  print();
+  int data[5] = {5, 4, 3, 2, 1};
+  int len = 5;
+  quickSort(data, 0, len - 1);
+
+  for (int i = 0; i < len; i++) cout << data[i] << ' ';
 
   return 0;
 }
